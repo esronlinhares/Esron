@@ -1,0 +1,206 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom left, #F21B54, #F2359D, #D95436 100%);
+    margin: 0 auto;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0D0D0D;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    background-color: #F2359D;
+    text-align: center;
+    width: 75%;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover{
+    background-color: blueviolet;
+    
+}
+
+nav ul li a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+  
+.header-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    align-items: center;
+}
+  
+.header-video{
+    position: relative;
+    width: 56%;
+    padding-bottom: 42%; /* proporção de 16:9 */
+    margin: 15px auto;
+}
+  
+.header-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.botão a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.botão a:hover{
+    background-color: blueviolet;
+}
+
+#discografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#discografia h1{
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+}
+
+#discografia div{
+    text-shadow: 3px 3px 5px rgb(25, 25, 25);
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+#discografia div img{
+    width: 300px;
+    box-shadow: 7px 7px 15px rgb(25, 25, 25);
+}
+
+#fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotos h1{
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+}
+
+#fotos img{
+    width: 32%;
+    margin: 10px;
+    box-shadow: 8px 8px 15px rgb(25, 25, 25);
+}
+
+#contato{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+#contato a{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#contato a:hover{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    background-color: #F2359D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover{
+    background-color: blueviolet;
+    
+}
+
+@media screen and (min-width: 768px){
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 80%;
+    }
+
+    #discografia{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
